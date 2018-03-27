@@ -209,5 +209,20 @@ function typeCast(){
 	var b = +a;
 	console.log(b);
 	console.log(typeof b);
+}
 
+//搜寻字母所在位置
+function searchTest(){
+	var a = "Hello World";
+	//第一次出现的位置 空格也占一位
+	var i = a.search(/or/i);
+	document.getElementById("demo").innerHTML = i;
+	var i = a.search(/o/g);
+	console.log(i);
+}
+
+function replaceTest(){
+	var a = "Hello World";	
+	var b = a.replace(/World/i,"JavaScript");
+	document.getElementById("demo").innerHTML = b;
 }
